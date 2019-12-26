@@ -1,0 +1,106 @@
+
+BaseURL: https://app.gushiwen.org/
+
+1、推荐列表	
+path : api/Default.aspx
+method : post
+data: {"pwd": "", "token": "gswapi", "id": "", "page": _page}
+
+-------更新：
+url: https://appbei.gushiwen.cn/api/onehour/Default.aspx
+参数：{page:1, token:gswapi}
+
+2、诗词详情
+path : api/shiwen/shiwenv.aspx
+method : post
+data: {"token": "gswapi", "id": poem.idnew}
+
+-------更新：
+url: https://app.gushiwen.cn/api/shiwen/shiwenv3.aspx
+参数：{token: gswapi, t:1568883126, id: 9527f2d9eec7}
+
+诗词配音：
+chenlang：朗诵人名拼音
+e1339dc3ff03：诗词id
+https://song.gushiwen.org/song/chenlang/e1339dc3ff03.mp3
+
+3、名句
+path : api/mingju/juv2.aspx
+method : post
+data: {"token": "gswapi", "id": poem.idnew}
+
+-------更新：
+url: https://app.gushiwen.cn/api/mingju/juv2.aspx
+参数：data: {"token": "gswapi", "id": poem.idnew}
+
+4、诗人信息
+path : api/author/author2.aspx
+method : post
+data: {'token': 'gswapi', 'id': author.idnew}
+
+
+-------更新：
+url: https://app.gushiwen.cn/api/author/author2.aspx
+参数：data: {'token': 'gswapi', 'id': author.idnew}
+
+诗人诗文：
+url: https://app.gushiwen.cn/api/author/authorsw2.aspx
+参数：data: {'token': 'gswapi', 'id': author.idnew, page: _page}
+
+5、标签（写景、抒情）
+path : https://app.gushiwen.cn/api/shiwen/Default.aspx
+method : post
+data: {'token': 'gswapi', "page" : _page, "tstr": widget.tagStr}
+
+-------更新：
+url: https://app.gushiwen.cn/api/shiwen/Default.aspx
+参数：data: {'id': '', 'pwd': '', 'token': 'gswapi', "page" : _page, "tstr": widget.tagStr}
+
+6、诗集（唐诗三百首）
+path : api/shiwen/Default.aspx
+method : post
+data: {'token': 'gswapi', "page" : _page, "tstr": widget.tagStr}
+
+-------更新：
+url: https://app.gushiwen.cn/api/shiwen/Default.aspx
+参数：data: {'id': '', 'pwd': '', 'token': 'gswapi', "page" : _page, "tstr": widget.tagStr}
+
+
+7、朝代
+path : api/shiwen/Default.aspx
+method : post
+data: {'token': 'gswapi', "page" : _page, "cstr": widget.tagStr}
+
+-------更新：
+url: https://app.gushiwen.cn/api/shiwen/Default.aspx
+参数：data: {'id': '', 'pwd': '', 'token': 'gswapi', "page" : _page, "cstr": widget.tagStr}
+
+
+8、诗人
+path : api/shiwen/Default.aspx
+method : post
+data: {'token': 'gswapi', "page" : _page, "astr": widget.tagStr}
+
+
+-------********更新：
+url: https://app.gushiwen.cn/api/author/author2.aspx
+参数：data: {'token': 'gswapi', 'id': author.idnew}
+
+诗人诗文：
+url: https://app.gushiwen.cn/api/author/authorsw2.aspx
+参数：data: {'token': 'gswapi', 'id': author.idnew, page: _page}
+
+9、搜索
+path : /api/ajaxSearch3.aspx
+method : post
+data: {"token": "gswapi", "valuekey": search.text}
+
+-------更新：
+url: https://app.gushiwen.cn/api/ajaxSearch3.aspx
+参数：data: {"token": "gswapi", "valuekey": search.text}
+
+
+
+
+
+
